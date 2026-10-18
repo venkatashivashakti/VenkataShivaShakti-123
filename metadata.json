@@ -1,0 +1,6 @@
+{
+  "name": "Venkata Shiva Shakti Auto Mobiles",
+  "description": "Venkata Shiva Shakti Auto Mobiles provides bike spare parts, accessories and customer support. Contact us for product availability and enquiries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
