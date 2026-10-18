@@ -6,6 +6,7 @@ import { Marquee } from "../components/Marquee";
 import { SectionTitle } from "../components/SectionTitle";
 import { ProductCard } from "../components/ProductCard";
 import { products } from "../data/products";
+import shopPhoto from "../images/bikeparts/shop_photo.jpeg";
 import {
   ShieldCheck,
   Headphones,
@@ -152,7 +153,7 @@ export const Home: React.FC = () => {
             <div className="lg:col-span-6 order-2 lg:order-1">
               <div className="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white">
                 <img
-                  src="/src/images/bikeparts/shop_photo.jpeg"
+                  src={shopPhoto}
                   alt="Venkata Shiva Shakti Auto Mobiles workshop and spare parts"
                   className="w-full h-80 sm:h-96 object-cover object-center"
                 />
