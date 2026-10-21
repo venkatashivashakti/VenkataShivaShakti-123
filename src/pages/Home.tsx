@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { SEO } from "../components/SEO";
 import { Hero } from "../components/Hero";
 import { DeitySection } from "../components/DeitySection";
 import { Marquee } from "../components/Marquee";
 import { SectionTitle } from "../components/SectionTitle";
 import { ProductCard } from "../components/ProductCard";
 import { products } from "../data/products";
-import shopPhoto from "../images/bikeparts/shop_photo.jpeg";
+import shopPhoto from "../images/bikeparts/shop_photo.webp";
 import {
   ShieldCheck,
   Headphones,
@@ -43,6 +44,23 @@ export const Home: React.FC = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <SEO
+        title="Venkata Shiva Shakti Auto Mobiles | Bike Spare Parts Shop in Vizianagaram"
+        description="Trusted bike spare parts shop in Vizianagaram. Find genuine two wheeler spare parts, chain sprocket sets, brake shoes, spark plugs, engine parts & motorcycle accessories."
+        canonicalUrl="https://www.venkatashivashakti.in/"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.venkatashivashakti.in/"
+            }
+          ]
+        }}
+      />
       {/* 1. Hero Section */}
       <Hero />
 

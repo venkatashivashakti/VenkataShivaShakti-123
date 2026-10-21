@@ -1,14 +1,14 @@
-import bearingSet from "../images/bikeparts/Bearing_set.png";
-import blinkerLights from "../images/bikeparts/Blinker_signal_lights.png";
-import brakeFluid from "../images/bikeparts/Break-fluid.png";
-import brakeShoes from "../images/bikeparts/Break_shoes.png";
-import chainSet from "../images/bikeparts/Chain_set.png";
-import goetzePiston from "../images/bikeparts/Goetze_piston.png";
-import handlebarSwitch from "../images/bikeparts/Hendel_bar_switch.png";
-import locks from "../images/bikeparts/Lockes.png";
-import sparkPlug from "../images/bikeparts/Spartk_plug.png";
-import ushaPiston from "../images/bikeparts/Usha_piston.png";
-import footrests from "../images/bikeparts/foot_rests.png";
+import bearingSet from "../images/bikeparts/Bearing_set.webp";
+import blinkerLights from "../images/bikeparts/Blinker_signal_lights.webp";
+import brakeFluid from "../images/bikeparts/Break-fluid.webp";
+import brakeShoes from "../images/bikeparts/Break_shoes.webp";
+import chainSet from "../images/bikeparts/Chain_set.webp";
+import goetzePiston from "../images/bikeparts/Goetze_piston.webp";
+import handlebarSwitch from "../images/bikeparts/Hendel_bar_switch.webp";
+import locks from "../images/bikeparts/Lockes.webp";
+import sparkPlug from "../images/bikeparts/Spartk_plug.webp";
+import ushaPiston from "../images/bikeparts/Usha_piston.webp";
+import footrests from "../images/bikeparts/foot_rests.webp";
 
 export interface Product {
   id: number;

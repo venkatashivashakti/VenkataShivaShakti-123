@@ -1,4 +1,5 @@
 import React from "react";
+import { SEO } from "../components/SEO";
 import { SectionTitle } from "../components/SectionTitle";
 import { ProductGrid } from "../components/ProductGrid";
 import { products } from "../data/products";
@@ -9,6 +10,39 @@ import { sendWhatsApp, getGeneralEnquiryMessage } from "../utils/whatsapp";
 export const Products: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-[#F8FAFC]">
+      <SEO
+        title="Two Wheeler Spare Parts & Motorcycle Accessories in Vizianagaram | Products"
+        description="Explore motorcycle spare parts & scooter spares in Vizianagaram: brake shoes, disc pads, chain & sprocket sets, spark plugs, clutch plates, bearings & electrical switches."
+        canonicalUrl="https://www.venkatashivashakti.in/products"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.venkatashivashakti.in/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Products",
+                "item": "https://www.venkatashivashakti.in/products"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": "https://www.venkatashivashakti.in/products#webpage",
+            "url": "https://www.venkatashivashakti.in/products",
+            "name": "Two Wheeler Spare Parts & Motorcycle Accessories Catalog",
+            "description": "Comprehensive catalog of motorcycle and scooter spare parts available at Venkata Shiva Shakti Auto Mobiles in Vizianagaram."
+          }
+        ]}
+      />
       {/* Page Header */}
       <section className="bg-[#172554] text-white py-14 sm:py-18 relative overflow-hidden">
         <div className="absolute inset-0 opacity-15">

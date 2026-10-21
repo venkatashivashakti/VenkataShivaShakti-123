@@ -23,9 +23,9 @@ function ScrollToTop() {
   return null;
 }
 
-export default function App() {
+export function AppContent() {
   return (
-    <BrowserRouter>
+    <>
       <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-[#F8FAFC] text-[#1E293B]">
         <Navbar />
@@ -41,6 +41,15 @@ export default function App() {
         <Footer />
         <WhatsAppButton />
       </div>
+    </>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
     </BrowserRouter>
   );
 }
+

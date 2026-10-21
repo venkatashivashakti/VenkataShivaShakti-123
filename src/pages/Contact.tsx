@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { SEO } from "../components/SEO";
 import { PhoneCall, MessageCircle, MapPin, Clock, Send, ShieldCheck, Navigation } from "lucide-react";
 import { business } from "../config/business";
 import {
@@ -32,6 +33,39 @@ export const Contact: React.FC = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#F8FAFC]">
+      <SEO
+        title="Contact Venkata Shiva Shakti Auto Mobiles | Bike Parts Shop Vizianagaram"
+        description="Contact Venkata Shiva Shakti Auto Mobiles beside Poornima Bakery, M.R.O. Office Road, Vizianagaram. Call or WhatsApp +91 6302830617 for bike parts availability."
+        canonicalUrl="https://www.venkatashivashakti.in/contact"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.venkatashivashakti.in/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact Us",
+                "item": "https://www.venkatashivashakti.in/contact"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "@id": "https://www.venkatashivashakti.in/contact#webpage",
+            "url": "https://www.venkatashivashakti.in/contact",
+            "name": "Contact Venkata Shiva Shakti Auto Mobiles",
+            "description": "Direct contact details and customer assistance for bike spare parts in Vizianagaram."
+          }
+        ]}
+      />
       {/* Contact Header */}
       <section className="bg-[#172554] text-white py-14 sm:py-18 relative overflow-hidden">
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { SEO } from "../components/SEO";
 import { SectionTitle } from "../components/SectionTitle";
 import { DeitySection } from "../components/DeitySection";
 import {
@@ -20,6 +21,39 @@ import { sendWhatsApp, getGeneralEnquiryMessage } from "../utils/whatsapp";
 export const About: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-[#F8FAFC]">
+      <SEO
+        title="About Us | Venkata Shiva Shakti Auto Mobiles - Vizianagaram Bike Spare Parts"
+        description="Learn about Venkata Shiva Shakti Auto Mobiles in Vizianagaram. Your trusted local destination for genuine motorcycle spare parts, components, and customer care."
+        canonicalUrl="https://www.venkatashivashakti.in/about"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.venkatashivashakti.in/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About Us",
+                "item": "https://www.venkatashivashakti.in/about"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "@id": "https://www.venkatashivashakti.in/about#webpage",
+            "url": "https://www.venkatashivashakti.in/about",
+            "name": "About Venkata Shiva Shakti Auto Mobiles",
+            "description": "Learn about Venkata Shiva Shakti Auto Mobiles in Vizianagaram, offering trusted motorcycle spare parts, daily maintenance components, and dependable customer service."
+          }
+        ]}
+      />
       {/* 1. About Hero */}
       <section className="bg-[#0F172A] text-white py-16 sm:py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
