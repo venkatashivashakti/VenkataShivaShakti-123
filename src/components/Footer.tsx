@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Wrench, PhoneCall, MessageCircle, MapPin, Clock } from "lucide-react";
+import { PhoneCall, MessageCircle, MapPin, Clock } from "lucide-react";
 import { business } from "../config/business";
 import { sendWhatsApp, getGeneralEnquiryMessage } from "../utils/whatsapp";
 
@@ -10,20 +10,21 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Business Info Column */}
-          <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#172554] flex items-center justify-center text-[#F59E0B] border border-[#F59E0B]/30 shadow-xs">
-                <Wrench className="w-5 h-5 text-[#F59E0B]" />
-              </div>
-              <div>
-                <span className="text-lg font-bold text-white tracking-tight block leading-tight">
-                  VENKATA SHIVA SHAKTI
-                </span>
-                <span className="text-xs font-semibold tracking-widest text-[#B91C1C] uppercase block">
-                  AUTO MOBILES
-                </span>
-              </div>
-            </Link>
+          <div className="space-y-5">
+            <div className="border-l-4 border-[#D89B32] pl-4">
+              <h2 className="text-xl font-extrabold leading-tight tracking-tight sm:text-2xl">
+                <span className="text-white">VENKATA </span>
+                <span className="text-[#D89B32]">SHIVA </span>
+                <span className="text-white">SHAKTI</span>
+              </h2>
+              <p className="mt-1 text-xs font-bold uppercase tracking-[0.22em] text-[#D89B32]">
+                Auto Mobiles
+              </p>
+              <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-slate-400">
+                Quality <span className="text-[#D89B32]">•</span> Trust{" "}
+                <span className="text-[#D89B32]">•</span> Service
+              </p>
+            </div>
 
             <p className="text-sm text-slate-400 leading-relaxed">
               {business.tagline}. Dedicated to serving riders with authentic replacements, commuter spares, and trusted guidance.

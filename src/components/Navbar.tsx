@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, PhoneCall, MessageCircle, Wrench } from "lucide-react";
+import { Menu, X, PhoneCall, MessageCircle } from "lucide-react";
 import { business } from "../config/business";
 import { sendWhatsApp, getGeneralEnquiryMessage } from "../utils/whatsapp";
 
@@ -65,20 +65,24 @@ export const Navbar: React.FC = () => {
             <Link
               to="/"
               id="nav-logo"
-              className="group flex items-center gap-3 focus:outline-hidden"
+              className="group flex items-center gap-2.5 sm:gap-3 focus:outline-hidden"
               aria-label="Venkata Shiva Shakti Auto Mobiles Home"
             >
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-[#172554] flex items-center justify-center text-[#F59E0B] shadow-sm border border-[#B91C1C]/30 group-hover:border-[#F59E0B] transition-colors shrink-0">
-                <Wrench className="w-5 h-5 sm:w-6 sm:h-6 text-[#F59E0B]" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-base sm:text-lg font-bold tracking-tight text-[#172554] leading-tight group-hover:text-[#B91C1C] transition-colors">
-                  VENKATA SHIVA SHAKTI
+              <img
+                src="/assets/logo.jpeg"
+                alt="Venkata Shiva Shakti Auto Mobiles"
+                className="h-14 w-28 sm:h-16 sm:w-32 object-contain transition-transform group-hover:scale-[1.02]"
+              />
+              <span className="hidden min-[400px]:flex flex-col border-l border-slate-200 pl-2.5 sm:pl-3">
+                <span className="text-sm sm:text-base font-extrabold tracking-tight leading-tight transition-colors">
+                  <span className="text-[#0F172A]">VENKATA </span>
+                  <span className="text-[#D89B32]">SHIVA </span>
+                  <span className="text-[#0F172A]">SHAKTI</span>
                 </span>
-                <span className="text-[10px] sm:text-xs font-semibold tracking-widest text-[#B91C1C] uppercase">
+                <span className="text-[9px] sm:text-[10px] font-bold tracking-[0.18em] text-[#D89B32] uppercase">
                   AUTO MOBILES
                 </span>
-              </div>
+              </span>
             </Link>
 
             {/* Desktop Navigation Links */}
